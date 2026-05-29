@@ -1,6 +1,6 @@
-# LuxFHE CoFHE Hardhat Starter
+# LuxFHE TorusEVM coprocessor Hardhat Starter
 
-This project is a starter repository for developing FHE (Fully Homomorphic Encryption) smart contracts on the LuxFHE network using CoFHE (Confidential Computing Framework for Homomorphic Encryption).
+This project is a starter repository for developing FHE (Fully Homomorphic Encryption) smart contracts on the LuxFHE network using TorusEVM coprocessor (Confidential Computing Framework for Homomorphic Encryption).
 
 ## Prerequisites
 
@@ -28,16 +28,16 @@ pnpm install
 
 - `pnpm compile` - Compile the smart contracts
 - `pnpm clean` - Clean the project artifacts
-- `pnpm test` - Run tests on the local CoFHE network
+- `pnpm test` - Run tests on the local TorusEVM coprocessor network
 - `pnpm test:hardhat` - Run tests on the Hardhat network
-- `pnpm test:localfhe` - Run tests on the local CoFHE network
+- `pnpm test:localfhe` - Run tests on the local TorusEVM coprocessor network
 
-### Local CoFHE Network
+### Local TorusEVM coprocessor Network
 
-- `pnpm localfhe:start` - Start a local CoFHE network
-- `pnpm localfhe:stop` - Stop the local CoFHE network
+- `pnpm localfhe:start` - Start a local TorusEVM coprocessor network
+- `pnpm localfhe:stop` - Stop the local TorusEVM coprocessor network
 - `pnpm localfhe:faucet` - Get test tokens from the faucet
-- `pnpm localfhe:deploy` - Deploy contracts to the local CoFHE network
+- `pnpm localfhe:deploy` - Deploy contracts to the local TorusEVM coprocessor network
 
 ### Contract Tasks
 
@@ -56,7 +56,7 @@ pnpm install
 
 ## `fhe` and `fhe-hardhat-plugin`
 
-This project uses fhe and the CoFHE Hardhat plugin to interact with FHE (Fully Homomorphic Encryption) smart contracts. Here are the key features and utilities:
+This project uses fhe and the TorusEVM coprocessor Hardhat plugin to interact with FHE (Fully Homomorphic Encryption) smart contracts. Here are the key features and utilities:
 
 ### fhe Features
 
@@ -109,7 +109,7 @@ This project uses fhe and the CoFHE Hardhat plugin to interact with FHE (Fully H
 The plugin supports different environments:
 
 - `MOCK`: For testing with mocked FHE operations
-- `LOCAL`: For testing with a local CoFHE network (whitelist only)
+- `LOCAL`: For testing with a local TorusEVM coprocessor network (whitelist only)
 - `TESTNET`: For testing and tasks using `arb-sepolia` and `eth-sepolia`
 
 You can check the current environment using:
@@ -135,11 +135,11 @@ if (!isPermittedFHEEnvironment(hre, 'MOCK')) {
 
 ### `fhe-mock-contracts`
 
-[`fhe-mock-contracts`](https://github.com/LuxFHEProtocol/fhe-mock-contracts) provides mock implementations of CoFHE contracts for testing FHE functionality without the actual coprocessor.
+[`fhe-mock-contracts`](https://github.com/LuxFHEProtocol/fhe-mock-contracts) provides mock implementations of TorusEVM coprocessor contracts for testing FHE functionality without the actual coprocessor.
 
 #### Features
 
-- Mock implementations of core CoFHE contracts:
+- Mock implementations of core TorusEVM coprocessor contracts:
   - MockTaskManager
   - MockQueryDecrypter
   - MockZkVerifier
